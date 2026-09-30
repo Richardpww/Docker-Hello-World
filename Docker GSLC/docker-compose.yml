@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  webserver:
+    image: php:8.2-apache
+    container_name: hello_world_app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
